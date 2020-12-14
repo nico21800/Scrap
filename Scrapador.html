@@ -13117,6 +13117,57 @@ div#notebook {
 
 
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Bienvenue-dans-le-Scraper-Genius">Bienvenue dans le Scraper Genius<a class="anchor-link" href="#Bienvenue-dans-le-Scraper-Genius">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ceci est le Scraper Genius créé par Pierre, Matéo et Nicolas pour Rapminig !</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Comment-&#231;a-marche-?">Comment &#231;a marche ?<a class="anchor-link" href="#Comment-&#231;a-marche-?">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Il vous faut attendre une vingtaine de secondes sur cette page que les "widgets" s'initialisent. Une fois les widgets initialisées, vous pouvez aller en bas de la page, une barre c'est affichée avec écrit "Entrez l'URL". Entrez l'URL Genius de la chanson que vous voulez scraper, cochez "Lancer_programme". Attendez quelques secondes et voilà votre chanson scrapée.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pour choisir la musique que vous voulez scraper, cliquez sur le lien suivant : <a href="https://genius.com/">Lien Genius</a>. Vous trouverez une barre de recherche en haut à gauche de la page, entrez le nom de la musique. Cliquez sur la musique. Et récuperez l'URL !!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Code-du-Scraping-Genius-:">Code du Scraping Genius :<a class="anchor-link" href="#Code-du-Scraping-Genius-:">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="(Allez-directement-en-bas-de-la-page-si-vous-voulez-seulement-scraper-votre-musique)">(Allez directement en bas de la page si vous voulez seulement scraper votre musique)<a class="anchor-link" href="#(Allez-directement-en-bas-de-la-page-si-vous-voulez-seulement-scraper-votre-musique)">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Premi&#232;re-&#233;tape-:-Installation-des-biblioth&#232;ques">Premi&#232;re &#233;tape : Installation des biblioth&#232;ques<a class="anchor-link" href="#Premi&#232;re-&#233;tape-:-Installation-des-biblioth&#232;ques">&#182;</a></h4>
+</div>
+</div>
+</div>
 
   
 
@@ -13149,18 +13200,18 @@ div#notebook {
 Requirement already satisfied: beautifulsoup4 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from bs4) (4.9.3)
 Requirement already satisfied: soupsieve&gt;1.2 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from beautifulsoup4-&gt;bs4) (2.0.1)
 Requirement already satisfied: requests in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (2.25.0)
-Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests) (3.0.4)
 Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests) (1.26.2)
 Requirement already satisfied: certifi&gt;=2017.4.17 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests) (2020.11.8)
 Requirement already satisfied: idna&lt;3,&gt;=2.5 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests) (2.10)
+Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests) (3.0.4)
 Requirement already satisfied: shadow_useragent in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (0.0.17)
-Requirement already satisfied: requests in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from shadow_useragent) (2.25.0)
 Requirement already satisfied: coloredlogs in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from shadow_useragent) (15.0)
 Requirement already satisfied: pytz in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from shadow_useragent) (2020.4)
+Requirement already satisfied: requests in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from shadow_useragent) (2.25.0)
 Requirement already satisfied: humanfriendly&gt;=9.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from coloredlogs-&gt;shadow_useragent) (9.1)
+Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests-&gt;shadow_useragent) (1.26.2)
 Requirement already satisfied: idna&lt;3,&gt;=2.5 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests-&gt;shadow_useragent) (2.10)
 Requirement already satisfied: certifi&gt;=2017.4.17 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests-&gt;shadow_useragent) (2020.11.8)
-Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests-&gt;shadow_useragent) (1.26.2)
 Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests-&gt;shadow_useragent) (3.0.4)
 </pre>
 </div>
@@ -13170,6 +13221,12 @@ Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /Library/Frameworks/Py
 </div>
 
   </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Deuxi&#232;me-&#233;tape-:-Importation-des-biblioth&#232;ques">Deuxi&#232;me &#233;tape : Importation des biblioth&#232;ques<a class="anchor-link" href="#Deuxi&#232;me-&#233;tape-:-Importation-des-biblioth&#232;ques">&#182;</a></h4>
+</div>
+</div>
+</div>
 
   
 
@@ -13191,6 +13248,12 @@ Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /Library/Frameworks/Py
 </div>
 
   </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Troisi&#232;me-&#233;tape-:-Fonction-de-Scraping-Genius">Troisi&#232;me &#233;tape : Fonction de Scraping Genius<a class="anchor-link" href="#Troisi&#232;me-&#233;tape-:-Fonction-de-Scraping-Genius">&#182;</a></h4>
+</div>
+</div>
+</div>
 
   
 
@@ -13205,36 +13268,44 @@ Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /Library/Frameworks/Py
     
     <span class="k">if</span> <span class="n">Lancer_Programme</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">URL</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;https://genius.com/&#39;</span><span class="p">):</span>
-            
             <span class="n">ua</span> <span class="o">=</span> <span class="n">shadow_useragent</span><span class="o">.</span><span class="n">ShadowUserAgent</span><span class="p">()</span>
-            <span class="n">my_user_agent</span> <span class="o">=</span> <span class="n">ua</span><span class="o">.</span><span class="n">percent</span><span class="p">(</span><span class="mf">0.05</span><span class="p">)</span>
-            
+            <span class="n">ua</span><span class="o">.</span><span class="n">force_update</span><span class="p">()</span>
+            <span class="n">my_user_agent</span> <span class="o">=</span> <span class="n">ua</span><span class="o">.</span><span class="n">percent</span><span class="p">(</span><span class="mf">0.20</span><span class="p">)</span>
             <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;User-Agent&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_user_agent</span><span class="p">)}</span>
-            <span class="n">Page</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span> <span class="n">headers</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">Page</span><span class="p">)</span>
+            <span class="n">Page</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span><span class="n">headers</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">Page</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
                 <span class="k">try</span><span class="p">:</span>
                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je cherche ...&quot;</span><span class="p">)</span>
                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
                     <span class="n">Soup</span> <span class="o">=</span> <span class="n">bs4</span><span class="o">.</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">Page</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
                     <span class="n">Texte</span> <span class="o">=</span> <span class="n">Soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span> <span class="p">:</span> <span class="s1">&#39;lyrics&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;J&#39;ai trouvé !&quot;</span><span class="p">)</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Voici votre texte :&quot;</span><span class="p">)</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
                     <span class="nb">print</span><span class="p">(</span><span class="n">Texte</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
                 <span class="k">except</span><span class="p">:</span>
                     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-                    <span class="k">while</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">:</span>
-                        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+                    <span class="k">while</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">:</span>
+                        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">31</span><span class="p">)</span>
                         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je cherche ...&quot;</span><span class="p">)</span>
                         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
                         <span class="k">try</span><span class="p">:</span>
+                            <span class="n">ua</span> <span class="o">=</span> <span class="n">shadow_useragent</span><span class="o">.</span><span class="n">ShadowUserAgent</span><span class="p">()</span>
+                            <span class="n">ua</span><span class="o">.</span><span class="n">force_update</span><span class="p">()</span>
+                            <span class="n">my_user_agent</span> <span class="o">=</span> <span class="n">ua</span><span class="o">.</span><span class="n">percent</span><span class="p">(</span><span class="mf">0.01</span><span class="p">)</span>
+                            <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;User-Agent&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_user_agent</span><span class="p">)}</span>
                             <span class="n">Page</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span> <span class="n">headers</span><span class="p">)</span>
                             <span class="n">Soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">Page</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
                             <span class="n">Texte</span> <span class="o">=</span> <span class="n">Soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span> <span class="p">:</span> <span class="s1">&#39;lyrics&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span>
                             <span class="n">i</span> <span class="o">=</span> <span class="mi">20</span>
+                            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Voici votre texte :&quot;</span><span class="p">)</span>
+                            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
                             <span class="nb">print</span><span class="p">(</span><span class="n">Texte</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
                         <span class="k">except</span><span class="p">:</span>
                             <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-                    <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">20</span><span class="p">:</span>
-                        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je n&#39;ai pas trouvé ...&quot;</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">6</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">!=</span> <span class="mi">20</span><span class="p">:</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je n&#39;ai pas trouvé : Le CAPTCHA génius est arrivé à te bloquer ...&quot;</span><span class="p">)</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; Veuillez relancer votre recherche ultérieurement ... &quot;</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="k">if</span> <span class="n">URL</span> <span class="o">==</span> <span class="s2">&quot;Entrez l&#39;URL&quot;</span><span class="p">:</span>
                     <span class="nb">print</span><span class="p">()</span>
@@ -13250,6 +13321,21 @@ Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /Library/Frameworks/Py
 </div>
 
   </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Scraping-de-votre-musique-:">Scraping de votre musique :<a class="anchor-link" href="#Scraping-de-votre-musique-:">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Allez chercher sur le site <a href="https://genius.com/">Genius</a> l'URL de votre musique.</p>
+<p>Exemple de lien : <a href="https://genius.com/Jul-italia-lyrics">https://genius.com/Jul-italia-lyrics</a></p>
+<p>Mettez votre lien dans le rectangle blanc un peu plus bas.</p>
+
+</div>
+</div>
+</div>
 
   
 
@@ -13284,23 +13370,6 @@ Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /Library/Frameworks/Py
 
 </div>
 
-</div>
-</div>
-
-  </div>
-
-  
-
-  <div class="
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
 
