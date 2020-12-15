@@ -13200,19 +13200,19 @@ div#notebook {
 Requirement already satisfied: beautifulsoup4 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from bs4) (4.9.3)
 Requirement already satisfied: soupsieve&gt;1.2 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from beautifulsoup4-&gt;bs4) (2.0.1)
 Requirement already satisfied: requests in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (2.25.0)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests) (2020.11.8)
-Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests) (1.26.2)
-Requirement already satisfied: idna&lt;3,&gt;=2.5 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests) (2.10)
 Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests) (3.0.4)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests) (2020.11.8)
+Requirement already satisfied: idna&lt;3,&gt;=2.5 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests) (2.10)
+Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests) (1.26.2)
 Requirement already satisfied: shadow_useragent in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (0.0.17)
-Requirement already satisfied: coloredlogs in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from shadow_useragent) (15.0)
-Requirement already satisfied: requests in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from shadow_useragent) (2.25.0)
 Requirement already satisfied: pytz in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from shadow_useragent) (2020.4)
+Requirement already satisfied: requests in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from shadow_useragent) (2.25.0)
+Requirement already satisfied: coloredlogs in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from shadow_useragent) (15.0)
 Requirement already satisfied: humanfriendly&gt;=9.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from coloredlogs-&gt;shadow_useragent) (9.1)
 Requirement already satisfied: certifi&gt;=2017.4.17 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests-&gt;shadow_useragent) (2020.11.8)
 Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests-&gt;shadow_useragent) (1.26.2)
-Requirement already satisfied: idna&lt;3,&gt;=2.5 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests-&gt;shadow_useragent) (2.10)
 Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests-&gt;shadow_useragent) (3.0.4)
+Requirement already satisfied: idna&lt;3,&gt;=2.5 in /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages (from requests-&gt;shadow_useragent) (2.10)
 </pre>
 </div>
 </div>
@@ -13273,7 +13273,6 @@ Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /Library/Frameworks/Py
             <span class="n">my_user_agent</span> <span class="o">=</span> <span class="n">ua</span><span class="o">.</span><span class="n">percent</span><span class="p">(</span><span class="mf">0.20</span><span class="p">)</span>
             <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;User-Agent&#39;</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_user_agent</span><span class="p">)}</span>
             <span class="n">Page</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">URL</span><span class="p">,</span><span class="n">headers</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">Page</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">Page</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
                 <span class="k">try</span><span class="p">:</span>
                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je cherche ...&quot;</span><span class="p">)</span>
@@ -13311,7 +13310,8 @@ Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /Library/Frameworks/Py
                 <span class="k">if</span> <span class="n">URL</span> <span class="o">==</span> <span class="s2">&quot;Entrez l&#39;URL&quot;</span><span class="p">:</span>
                     <span class="nb">print</span><span class="p">()</span>
                 <span class="k">else</span><span class="p">:</span>
-                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;L&#39;URL n&#39;a pas marché&quot;</span><span class="p">)</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je n&#39;ai pas trouvé : Le CAPTCHA génius est arrivé à te bloquer ...&quot;</span><span class="p">)</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; Veuillez relancer votre recherche ultérieurement ... &quot;</span><span class="p">)</span>
 
         <span class="k">else</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Veuillez entrer un URL du site https://genius.com/ &quot;</span><span class="p">)</span>
@@ -13371,23 +13371,6 @@ Requirement already satisfied: chardet&lt;4,&gt;=3.0.2 in /Library/Frameworks/Py
 
 </div>
 
-</div>
-</div>
-
-  </div>
-
-  
-
-  <div class="
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
 
